@@ -51,7 +51,7 @@
   }
 
   .leftsidebar{
-    @apply sticky top-0 left-0 z-20 h-screen w-fit flex flex-col justify-between overflow-auto border-r border-r-dark-4 bg-dark-2 pb-5 pt-28 max-md:hidden
+    @apply sticky top-0 left-0 z-20 h-screen w-fit flex flex-col justify-between overflow-auto border-r border-r-dark-4 bg-dark-2 pb-5 pt-28 max-md:hidden;
   }
 
   .leftsidebar_link {
@@ -62,7 +62,7 @@
       @apply fixed bottom-0 z-10 w-full rounded-t-3xl bg-glassmorphism p-4 backdrop-blur-lg sm:px-7 md:hidden;
     }
   
-    .bottombar_container {
+    .bottombar_container{
       @apply flex items-center justify-between gap-3 sm:gap-5;
     }
   
