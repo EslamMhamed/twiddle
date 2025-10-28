@@ -42,23 +42,31 @@ export default async function RootLayout({
   }
  
    return (
-    <ClerkProvider>
-      <html lang="en">
-        <body>
-          <main className={`${inter.className} `}>
-            <TopBar />
-            <LeftSideBar />
-            <section className="main-container">
-              <div className="flex items-center justify-center w-full min-h-screen">
-                {children}
-              </div>
-            </section>
-            <RightSideBar />
-            <BottomBar/>
-          </main>
-        </body>
-      </html>
-    </ClerkProvider>
-  );
+        <>  
+            <html lang='en'>
+                <ClerkProvider>
+                    <body>
+                        <main className={ `${inter.className}` }>
+                            <TopBar />
+                            
+                            <main className='flex'>
+                                <LeftSideBar />
+                                <section className='main-container'>
+                                    <div className='w-full max-w-4xl'>
+                                    { children }
+                                    </div>
+                                </section>
+                                <RightSideBar />
+                            </main>
+
+                            <BottomBar />
+                        </main>
+                    </body>
+                </ClerkProvider>
+                
+
+            </html>
+        </>
+    )
 
 }
