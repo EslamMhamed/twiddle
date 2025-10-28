@@ -4,13 +4,12 @@
 
 
 
-  :root{
-    --color-dark-1 : #000000;
-    --color-light-1: #ffffff
-  }
+:root {
+  --color-dark-1: #000000;
+  --color-light-1: #ffffff;
+}
 
-  @theme inline {
-    --color-dark-1:(var(--color-dark-1)),
-    --color-light-1: (var(--color-light-1))
-  }
-
+@theme inline {
+  --color-dark-1: (var(--color-dark-1));
+  --color-light-1: (var(--color-light-1));
+}
