@@ -1,7 +1,6 @@
 @import "tailwindcss";
 /* @import "tailwindcss-animate"; */
-@import "tw-animate-css";
-
+/* @import "tw-animate-css"; */
 
 
 :root {
@@ -12,4 +11,11 @@
 @theme inline {
   --color-dark-1: (var(--color-dark-1));
   --color-light-1: (var(--color-light-1));
+}
+
+
+@layer components{
+  .main-container{
+    @apply flex min-h-screen flex-1 flex-col items-center bg-dark-1 px-6 pb-10 pt-28 max-md:pb-32 sm:px-10;
+  }
 }
