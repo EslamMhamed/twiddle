@@ -15,7 +15,8 @@ export async function createUser({userId,email, username, name, image}: CreateUs
         connectToDB()
         await User.create({
             id:userId, 
-            username: username?.toLowerCase()
+            username: username?.toLowerCase(),
+            name, image, email
         })
     } catch (error: any) {
         throw new Error(`Failed to create user: ${error.message}`)
