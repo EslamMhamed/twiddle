@@ -23,8 +23,9 @@ const userSchema = new mongoose.Schema({
         }
     ],
     onboarded: {
-        type: boolean, default: false
-    },
+  type: Boolean,
+  default: false,
+},
     groups: [
         {type: mongoose.Schema.Types.ObjectId,
          ref: 'Group'
